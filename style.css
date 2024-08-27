@@ -39,6 +39,7 @@ body{
     grid-area: 1 / 2 / 2 / 3;
     font-family: "Bebas Neue", sans-serif;
     font-size: 1.2em;
+    /* box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6); */
 }
 
 .header .top {
@@ -104,5 +105,41 @@ body{
 }
 
 .content {
-    background-color: whitesmoke;
+    background-color: rgb(211, 210, 210);
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 1.4em;
 }
+
+.content .projects{
+    grid-area: 1 / 1 / 3 / 2;
+    margin: 1em;
+    margin-top: 0;
+}
+
+.cards{
+    height: 90%;
+    display: grid;
+    gap: 30px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+.card{
+    border-left: .4em solid orange;
+    border-radius: .3em;
+    background-color: white;
+    padding: 1em;
+}
+
+.card > p{
+    font-size: 1rem;
+}
+
+.card > i:first-of-type{
+    margin-left: 80%;
+}
+
+
