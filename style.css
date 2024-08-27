@@ -6,7 +6,7 @@ body{
 
 .container {
     display: grid;
-    height: 100vh;
+    max-height: 100vh;
     grid-template-columns: 1fr 5fr;
     grid-template-rows: 1fr 5fr;
 }
@@ -140,6 +140,47 @@ body{
 
 .card > i:first-of-type{
     margin-left: 80%;
+}
+
+.announcements > div{
+    background-color: white;
+    border-radius: 5%;
+    padding: 5% 10%;
+}
+
+.post > p{
+    margin: 0;
+    font-size: .9rem;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.post > hr {
+    margin: 1em 1em;
+}
+
+.trending{
+    margin-top: 0;
+    padding: 0;
+}
+
+.accounts{
+    background-color: white;
+    border-radius: 5%;
+}
+.acnt {
+    display: flex;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: .9rem;
+    gap: 1em;
+    padding: 1em;
+}
+.acnt > img {
+    width: 2em;
+    border-radius: 100%;
+}
+.acnt > p{
+    display: flex;
+    flex-direction: column;
 }
 
 
